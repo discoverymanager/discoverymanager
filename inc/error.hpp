@@ -20,5 +20,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <errno.h>
+#include <cerrno>
+#include <cstring>
+#include <iostream>
 
+void processSystemCallError(int error_code, FILE* stream);
